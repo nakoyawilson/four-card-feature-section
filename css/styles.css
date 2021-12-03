@@ -57,7 +57,8 @@ h2 {
 }
 
 .centered-paragraph {
-  margin: 0 28rem;
+  margin: 0 auto;
+  width: 500px;
 }
 
 .container {
@@ -121,4 +122,31 @@ h2 {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.6rem;
+    margin: 4rem 0 1rem;
+  }
+  .centered-paragraph {
+    width: 320px;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  .sections {
+    width: 310px;
+  }
+
+  footer {
+    margin-top: 3rem;
+  }
 }
