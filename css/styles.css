@@ -1,4 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+  --color-white: #fff;
+  --dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-gray);
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: var(--grayish-blue);
+  line-height: 1.6;
+}
+
+header,
+.centered-paragraph {
+  text-align: center;
+}
+
+h1 {
+  color: var(--dark-blue);
+  font-weight: 200;
+}
+
+h2 {
+  color: var(--dark-blue);
+}
+
+.emphasized-text {
+  display: block;
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sections {
+  background-color: var(--color-white);
+  border-radius: 5px;
+  width: 350px;
+  height: 250px;
+  padding: 2rem;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);;
+}
+
+.supervisor {
+  border-top: 5px solid var(--color-cyan);
+}
+
+.team-builder {
+  border-top: 5px solid var(--color-red);
+}
+
+.karma {
+  border-top: 5px solid var(--color-orange);
+}
+
+.calculator {
+  border-top: 5px solid var(--color-blue);
+}
+
+.icons {
+  float: right;
+}
+
 /* Footer Section */
+footer {
+  position: absolute;
+  bottom: 0;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
